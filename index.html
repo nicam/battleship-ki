@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="ki.js"></script>
+    </head>
+<body>
+
+<div class="probability">
+<h1>Probability</h1>
+<p>Shows the probability calculations where ships are</p>
+<canvas id="probability" width="500" height="500" style="border: 1px solid grey"/></canvas>
+    <ul class='legend-labels'>
+        <li><span style='background:#f00;'></span>Hit next <span class="hitnext"></span></li>
+        <li><span style='background:#F1EEF6;'></span>Low probability</li>
+        <li><span style='background:#000;'></span>High probability</li>
+    </ul>
+</div>
+<div class="state">
+<h1>State</h1>
+<p>Click on the board to manipulate it:<br/>1 click sets field as MISS 2 clicks sets field as HIT</p>
+<canvas id="state" width="500" height="500" style="border: 1px solid grey"></canvas>
+    <ul class='legend-labels'>
+        <li><span style='background:#0f0;'></span>Hit</li>
+        <li><span style='background:#000064;'></span>Miss</li>
+        <li><span style='background:#00f;'></span>Unknown</li>
+    </ul>
+</div>
+<div class='legend-scale'>
+
+</div>
+
+<style type='text/css'>
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    div {
+        width: 500px;
+        float: left;
+    }
+    p {
+        height: 45px;
+    }
+    ul {
+        padding: 0;
+    }
+    ul li {
+        list-style: none;
+        height: 28px;
+    }
+    li span {
+        display: block;
+        float: left;
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    }
+    .hitnext {
+        display: inline;
+        float: none;
+        font-weight: bold;
+    }
+    .probability {
+        margin-right: 50px;
+    }
+</style>
+</body>
+</html>
